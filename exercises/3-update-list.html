@@ -50,6 +50,13 @@
         'use strict';
 
         // write me! (... without using cloneNode, that's kind of cheating)
+         const actual = document.getElementById('actual')
+         const ulEl = actual.children[1];
+
+         ulEl.children[0].innerText = 'robots';
+         ulEl.children[1].innerText = 'solar systems';
+         ulEl.children[2].innerText = 'oil';
+
       </script>
 
     </div>
