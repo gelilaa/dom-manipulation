@@ -46,6 +46,43 @@
         'use strict';
 
         // write me! (... without using cloneNode, that's kind of cheating)
+
+       const actualDiv = document.getElementById('actual');
+       const h1El = document.createElement('h2');
+       h1El.innerText = 'a list of things';
+       actualDiv.appendChild(h1El);
+
+      const ul1 = document.createElement('ul')
+      ul1.start = '0';
+      actualDiv.appendChild(ul1);
+
+      const il1 = document.createElement('li');
+      il1.innerHTML = 'robots';
+      ul1.appendChild(il1);
+
+      const il2 = document.createElement('li');
+      il2.innerHTML = 'solar systems';
+      ul1.appendChild(il2);
+
+      const il3 = document.createElement('li');
+      ul1.appendChild(il3);
+
+      const ail = document.createElement('a');
+      
+      ail.href = 'https://www.badgerbadgerbadger.com';
+      ail.innerHTML = 'learn about badgers';
+      ail.expected = '_blank';
+      il3.appendChild(ail);
+
+
+      const il4 = document.createElement('li');
+      il4.innerHTML = 'oil';
+      ul1.appendChild(il4);
+
+
+
+
+
       </script>
 
     </div>

@@ -55,7 +55,13 @@
           const detailsEl = actualDiv.children[0];
            const h1El = document.createElement('h1');
            h1El.innerText = 'a list of things';
-           
+           actualDiv.insertBefore(h1El,detailsEl);
+            
+            const li2 = document.createElement('li');
+             li2.innerHTML = 'solar systems';
+            const rep = detailsEl.children[1];
+            detailsEl.replaceChild(li2,rep);
+             
 
 
       </script>

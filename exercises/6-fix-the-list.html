@@ -50,6 +50,30 @@
         'use strict';
 
         // write me! (... without using cloneNode, that's kind of cheating)
+        const actualDiv = document.getElementById('actual');
+        const detailsEl = actualDiv.children[0];
+        const h1El = document.createElement('h1');
+        h1El.innerText = 'a list of things';
+        actualDiv.insertBefore(h1El,detailsEl);
+
+        
+        const ol1 = actualDiv.children[1];
+        const uL1 = document.createElement('ul');
+        actualDiv.replaceChild(uL1,ol1);
+
+        const il1 = document.createElement('li');
+        il1.innerHTML = 'robots';
+        uL1.appendChild(il1);
+
+        const il2 = document.createElement('li');
+        il2.innerHTML = 'solar systems';
+        uL1.appendChild(il2);
+
+        const il3 = document.createElement('li');
+        il3.innerHTML = 'oil';
+        uL1.appendChild(il3);
+
+
       </script>
 
     </div>
